@@ -2,5 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: grey;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+}
+
+.collapsible {
+    border: 1px solid silver;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0px 20px;
+    width: 450px;
+    border-top: 0px;
+    border-bottom: 0px;
+    transition: padding 0.3s;
+}
+
+.collapsible-active {
+    max-height: 600px;
+    padding: 20px;
+    border: 1px solid silver;
 }
